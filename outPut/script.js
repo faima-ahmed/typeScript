@@ -62,11 +62,11 @@ class player {
 }
 const mashrafi = new player("Mashrafi", 35, "Bangladesh");
 const sakib = new player("Sakib", 40, "Bangladesh");
-sakib.name = 'Mashrafi';
-console.log(sakib.name);
+// sakib.name= 'Mashrafi';
+// console.log(sakib.name);
 sakib.age = 50;
 console.log(sakib.age);
-mashrafi.country = 'Englang';
+//mashrafi.country= 'Englang';
 //console.log(mashrafi.name);
 console.log(sakib.age);
 console.log(mashrafi.country);
