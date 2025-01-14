@@ -59,7 +59,8 @@ add = (a: number, b: number) => {
 // }
 // console.log(calculation(5, 6, 'minus'));
 
-class player {
+//class acccess modifiers
+/*class player {
   private name: string;
   public age: number;
   readonly country: string;
@@ -68,7 +69,15 @@ class player {
     this.name = n;
     this.age = a;
     this.country = c;
-  }
+  }*/
+
+class player {
+  constructor(
+    private name: string,
+    public age: number,
+    readonly country: string,
+  ) {}
+
   play() {
     console.log(`${this.name} from ${this.country} is playing!`);
   }
@@ -77,7 +86,7 @@ const mashrafi = new player("Mashrafi", 35, "Bangladesh");
 const sakib = new player("Sakib", 40, "Bangladesh");
 // sakib.name= 'Mashrafi';
 // console.log(sakib.name);
-sakib.age= 50;
+sakib.age = 50;
 console.log(sakib.age);
 //mashrafi.country= 'Englang';
 //console.log(mashrafi.name);
