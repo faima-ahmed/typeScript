@@ -1,3 +1,4 @@
+import { player } from "./classes/player.js";
 // const country= 'I love Bangladesh';
 // console.log(country);
 
@@ -35,11 +36,11 @@
 //person.country='Bangladesh'
 
 //function
-const myFunc = (a: string, b: string, c: string = "true") => {
-  console.log(c);
-  console.log(`Hello ${a} ${b}`);
-};
-myFunc("A", "B");
+// const myFunc = (a: string, b: string, c: string = "true") => {
+//   console.log(c);
+//   console.log(`Hello ${a} ${b}`);
+// };
+// myFunc("A", "B");
 
 //function signature
 let add: (x: number, y: number) => number;
@@ -71,17 +72,7 @@ add = (a: number, b: number) => {
     this.country = c;
   }*/
 
-class player {
-  constructor(
-    private name: string,
-    public age: number,
-    readonly country: string,
-  ) {}
 
-  play() {
-    console.log(`${this.name} from ${this.country} is playing!`);
-  }
-}
 const mashrafi = new player("Mashrafi", 35, "Bangladesh");
 const sakib = new player("Sakib", 40, "Bangladesh");
 // sakib.name= 'Mashrafi';
@@ -96,3 +87,25 @@ console.log(mashrafi.country);
 const players: player[] = [];
 players.push(sakib);
 players.push(mashrafi);
+
+// object of interfaces
+interface RectangleOptions{
+  width: number;
+  length: number;
+}
+function drawRectangle(options: RectangleOptions){
+  let width= options.width;
+  let length= options.length
+
+}
+// drawRectangle({
+//   width: 30,
+//   length: 20,
+//   height: 10,
+// })
+let extraValue= {
+  width: 30,
+  length: 20,
+  height: 10,
+}
+drawRectangle(extraValue);
