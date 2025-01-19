@@ -62,7 +62,8 @@ add = (a, b) => {
     this.country = c;
   }*/
 const mashrafi = new player("Mashrafi", 35, "Bangladesh");
-const sakib = new player("Sakib", 40, "Bangladesh");
+let sakib;
+sakib = new player("Sakib", 40, "Bangladesh");
 // sakib.name= 'Mashrafi';
 // console.log(sakib.name);
 sakib.age = 50;

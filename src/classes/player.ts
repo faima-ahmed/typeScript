@@ -1,7 +1,9 @@
+import { IsPlayer } from "../interfaces/IsPlayer";
+
 //module-system
-export class player {
+export class player implements IsPlayer{
     constructor(
-      private name: string,
+      public name: string,
       public age: number,
       readonly country: string,
     ) {}

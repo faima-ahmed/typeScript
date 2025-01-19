@@ -1,4 +1,5 @@
 import { player } from "./classes/player.js";
+import { IsPlayer } from "./interfaces/IsPlayer.js";
 // const country= 'I love Bangladesh';
 // console.log(country);
 
@@ -74,7 +75,8 @@ add = (a: number, b: number) => {
 
 
 const mashrafi = new player("Mashrafi", 35, "Bangladesh");
-const sakib = new player("Sakib", 40, "Bangladesh");
+let sakib:IsPlayer;
+sakib = new player("Sakib", 40, "Bangladesh");
 // sakib.name= 'Mashrafi';
 // console.log(sakib.name);
 sakib.age = 50;
@@ -84,7 +86,7 @@ console.log(sakib.age);
 console.log(sakib.age);
 console.log(mashrafi.country);
 
-const players: player[] = [];
+const players: IsPlayer[] = [];
 players.push(sakib);
 players.push(mashrafi);
 
